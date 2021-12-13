@@ -8,9 +8,9 @@ class Mekas {
         this.app = app;
 
         PIXI.Loader.shared
-        .add('skeleton', 'mecha_1002_101d_show_ske.json')
-        .add('texture_json', 'mecha_1002_101d_show_tex.json')
-        .add('texture_png', 'mecha_1002_101d_show_tex.png')
+        .add('skeleton', 'data/mecha_1002_101d_show_ske.json')
+        .add('texture_json', 'data/mecha_1002_101d_show_tex.json')
+        .add('texture_png', 'data/mecha_1002_101d_show_tex.png')
         .load(this.onAssetsLoaded.bind(this))
         .reset() // test de reset load issue https://github.com/pixijs/pixijs/issues/4100
         ;
